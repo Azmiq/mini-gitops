@@ -2,5 +2,5 @@ resources:
   - ../../base
 
 images:
-  - name: docker.io/azmiq/mini-app
+  - name: docker.io/azmiqa/mini-app
     newTag: dev
