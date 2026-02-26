@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mini-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mini-app
+  template:
+    metadata:
+      labels:
+        app: mini-app
+    spec:
+      containers:
+        - name: mini-app
+          image: ghcr.io/YOUR_GH_ORG/mini-app:dev
+          ports:
+            - containerPort: 8080
