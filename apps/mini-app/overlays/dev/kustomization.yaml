@@ -1,0 +1,6 @@
+resources:
+  - ../../base
+
+images:
+  - name: ghcr.io/YOUR_GH_ORG/mini-app
+    newTag: dev
